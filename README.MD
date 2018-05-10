@@ -1,7 +1,8 @@
 #### 转载至https://github.com/anypossiblew/ui-map-baidu
 ## 使用示例
 > 安装：
-bower install angular-map-baidu --save
+
+bower install baidumap-ui --save
 
 > html页面：
 ```html
