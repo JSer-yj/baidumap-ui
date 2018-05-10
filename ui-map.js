@@ -1,31 +1,3 @@
-/**!
- * The MIT License
- *
- * Copyright (c) 2013 the angular-ui-map-baidu Team, http://anypossiblew.github.io/ui-map-baidu
- *
- * Permission is hereby granted, free of charge, to any person obtaining a copy
- * of this software and associated documentation files (the "Software"), to deal
- * in the Software without restriction, including without limitation the rights
- * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
- * copies of the Software, and to permit persons to whom the Software is
- * furnished to do so, subject to the following conditions:
- *
- * The above copyright notice and this permission notice shall be included in
- * all copies or substantial portions of the Software.
- *
- * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
- * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
- * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
- * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
- * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
- * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
- * THE SOFTWARE.
- *
- * angular-ui-map-baidu
- * https://github.com/anypossiblew/ui-map-baidu
- *
- * @authors https://github.com/anypossiblew/ui-map-baidu/graphs/contributors
- */
 'use strict';
 (function () {
   var app = angular.module('ui.map', ['ui.event']);
@@ -197,50 +169,7 @@
         };
       }
     ]);
-  // app.value('uiMapInfoWindowConfig', {})
-  //   .directive('uiMapInfoWindow', ['uiMapInfoWindowConfig', '$window', '$parse', '$compile',
-  //     function (uiMapInfoWindowConfig, $window, $parse, $compile) {
-  //       var infoWindowEvents = 'close open maximize restore clickclose';
-  //       var options = uiMapInfoWindowConfig || {};
-  //       return {
-  //         link: function (scope, elm, attrs) {
-  //           var opts = angular.extend({}, options, scope.$eval(attrs.uiOptions));
-  //           var eventListeners = {};
-  //           var model = $parse(attrs.uiMapInfoWindow);
-  //           var infoWindow = model(scope);
-  //
-  //           scope.$on("map.loaded", function (e, type) {
-  //             if (type == "baidu" && !infoWindow) {
-  //               initInfoWindow();
-  //             }
-  //           });
-  //
-  //           if ($window.BMap && $window.BMap.Map) {
-  //             initInfoWindow();
-  //           }
-  //
-  //           function initInfoWindow() {
-  //             if (!infoWindow) {
-  //               infoWindow = new $window.BMap.InfoWindow(elm[0], opts);
-  //               model.assign(scope, infoWindow);
-  //             }
-  //             bindMapEvents(scope, infoWindowEvents, infoWindow, elm, eventListeners);
-  //             /* The info window's contents dont' need to be on the dom anymore,
-  //              google maps has them stored.  So we just replace the infowindow element
-  //              with an empty div. (we don't just straight remove it from the dom because
-  //              straight removing things from the dom can mess up angular) */
-  //             elm.replaceWith('<div></div>');
-  //             //Decorate infoWindow.show to $compile contents before opening
-  //             var _show = infoWindow.show;
-  //             infoWindow.show = function open(a1, a2, a3, a4, a5, a6) {
-  //               $compile(elm.contents())(scope);
-  //               _show.call(infoWindow, a1, a2, a3, a4, a5, a6);
-  //             };
-  //           }
-  //         }
-  //       };
-  //     }
-  //   ]);
+  
   /*
    * Map overlay directives all work the same. Take map marker for example
    * <ui-map-marker="myMarker"> will $watch 'myMarker' and each time it changes,
