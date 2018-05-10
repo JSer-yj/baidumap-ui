@@ -1,7 +1,8 @@
 #### 转载至https://github.com/anypossiblew/ui-map-baidu
 ## 使用示例
-### 安装
+#### 安装
 bower install angular-map-baidu --save
+#### html页面
 ```html
 <div ui-map-async-load>
   <div id="map_canvas"
@@ -12,8 +13,8 @@ bower install angular-map-baidu --save
 </div>
 ```
 
-```javascript
 #### angular component
+```javascript
 $scope.mapOptions = {
   ngCenter: {         //中心坐标
     lng: 116.404,
@@ -28,9 +29,13 @@ $scope.mapOptions = {
   ngZoom: 12,         //缩放比例
   overview: true,     //缩略地图
 };
+```
 #### angular module注入ui.map依赖
+```javascript
 angular.module('myAppModule', ['ui.map']);
+```
 #### module config中加入加载地图链接所需要的参数
+```javascript
 myAppModule.config(['uiMapLoadParamsProvider', function (uiMapLoadParamsProvider) {
     uiMapLoadParamsProvider.setParams({
         v: '2.0', // 版本号
