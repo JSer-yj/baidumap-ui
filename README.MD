@@ -3,7 +3,8 @@
 > 去掉了uiMapInfoWindow directive，通过自定义来展示信息窗口
 ## 使用示例
 > 安装：   
-bower install baidumap-ui --save
+- bower install baidumap-ui --save   
+- npm install baidumap-ui --save
 
 
 > html页面：
