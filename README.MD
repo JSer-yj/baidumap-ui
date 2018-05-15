@@ -1,15 +1,14 @@
 > ui-map.js源码大部分转载至[https://github.com/anypossiblew/ui-map-baidu]   
 > 在原ui-map.js的基础上，根据项目需要，新增了toolbar控制，来更好的选择需要展示的地图控件   
 > 去掉了uiMapInfoWindow directive，通过自定义来展示信息窗口
-## 使用示例
-> 使用：   
-#### package.json
+## 使用示例   
+> package.json
 ```javascript
   "dependencies": {
     "baidumap-ui": "JSer-yj/baidumap-ui#1.0.0"
   }
 ```
-#### >npm install 
+> 执行 npm install    
 
 
 > html页面：
